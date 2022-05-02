@@ -2,18 +2,18 @@ import java.util.Scanner;
 
 public class fib_sequence{
     public static void main(String[]args){
-        int a=0;
-        int b=1;
-        int n=20;
-        System.out.println("Fibonacci Series till " + n + " terms:");
-        for (int i=0; i<n; i++){
-            
-            int total=a+b;
-            a=b;
-            b=total; 
-
-            System.out.println(total);
+      int [] array= new int [20];
+      int i; 
+        System.out.println("Fibonacci Series till 20th terms:");
+        for (i=0; i<array.length; i++){ 
+            array[i]= array[i-1] + array[i-2];  
         }
+        for(i=0; i<array.length; i++){
+            System.out.println(array[i]);
+        }
+        
 
     }
+        
 }
+
